@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .btn {
   padding: 10px 20px;
   color: white;
-  border: 1px solid white;
+  border: none;
   background-color: inherit;
   border-radius: 25px;
   font-weight: bold;
@@ -80,6 +81,44 @@ header > div ul li a {
   font-weight: bold;
 }
 
+main .hero {
+  height: 90vh;
+  background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
+  color: white;
+  position: relative;
+}
+main .hero div {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+main .hero div img {
+  height: 50px;
+  margin: 30px 0px;
+}
+main .hero div h2 {
+  font-size: 45px;
+  width: 75%;
+}
+main .hero div h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 20px 0px;
+}
+main .hero div button {
+  margin-right: 15px;
+  font-size: 20px;
+}
+main .hero div button.btnWhite {
+  border: 1px solid white;
+}
+main .hero div button.btnWhite:hover {
+  color: black;
+  background-color: white;
+}
+main .hero div button.btnBlue:hover {
+  background-color: #1165D0;
+}
 main .boxes {
   width: 80%;
   margin: auto;

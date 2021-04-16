@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 // Mix
 .btn{
   padding: 10px 20px;
   color: white;
-  border: 1px solid white;
+  border: none;
   background-color: inherit;
   border-radius: 25px;
   font-weight: bold;
@@ -102,6 +103,55 @@ header{
 }
 
 main{
+
+  & .hero{
+    height: 90vh;
+    background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/dt-ps-max-poster-image?$pjpeg$&jpegSize=300&wid=1440");
+    color: white;
+    position: relative;
+
+    & div{
+      position: absolute;
+      top: 150px;
+      left: 150px;
+
+      & img{
+        height: 50px;
+        margin: 30px 0px;
+      }
+
+      & h2{
+        font-size: $fontGrande;
+        width: 75%;
+      }
+
+      & h4{
+        font-size: $fontMedio;
+        font-weight: normal;
+        margin: 20px 0px;
+      }
+
+      & button{
+        margin-right: 15px;
+        font-size: $fontMedio;
+
+        &.btnWhite{
+          border: 1px solid white;
+
+          &:hover{
+            color: black;
+            background-color: white;
+          }
+        }
+
+        &.btnBlue:hover{
+          background-color: $coloreBottoneHover;
+        }
+
+      }
+    }
+
+  }
 
   & .boxes{
     width: 80%;
