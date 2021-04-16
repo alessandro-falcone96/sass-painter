@@ -1,0 +1,102 @@
+// Reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Mix
+.btn{
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid white;
+  background-color: inherit;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btnBlue{
+  background-color: $coloreBottone;
+}
+
+header{
+
+  & > div{
+
+    &.headerSopra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+      & div:first-child:hover{
+        cursor: pointer;
+      }
+
+      & > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+
+        & > img{
+          height: 80%;
+        }
+
+        & > h1{
+          color: red;
+          font-size: $fontMedio;
+          padding-left: 10px;
+        }
+
+        & i{
+          cursor: pointer;
+
+          &:hover{
+            color: $coloreBottone;
+          }
+        }
+
+        & > button{
+          color: $coloreHeaderText;
+          margin-left: 10px;
+          cursor: pointer;
+
+          &:hover{
+            color: $coloreBottone;
+          }
+        }
+      }
+    }
+
+    &.headerSotto{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fdfcff;
+
+      & button{
+        margin-left: 20px;
+
+        &:hover{
+          background-color: $coloreBottoneHover;
+        }
+      }
+    }
+
+    & ul li{
+      display: inline-block;
+      padding: 30px 20px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $coloreBottoneSfondo;
+      }
+
+      & a{
+        text-decoration: none;
+        color: $coloreHeaderText;
+        font-size: $fontPiccolo;
+        font-weight: bold;
+      }
+    }
+  }
+}
