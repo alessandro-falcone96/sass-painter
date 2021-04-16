@@ -42,6 +42,29 @@
 
       <main>
 
+        <section class="hero">
+
+        </section>
+
+        <section class="boxes">
+
+          <div class="box" v-for="item in boxesDiv">
+
+            <div class="immagine">
+
+              <img :src="item.foto" alt="">
+
+            </div>
+
+            <div class="testo">
+              <h4>{{item.titolo}}</h4>
+              <p>{{item.testo}}</p>
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <footer>

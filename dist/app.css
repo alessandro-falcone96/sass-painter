@@ -79,3 +79,35 @@ header > div ul li a {
   font-size: 15px;
   font-weight: bold;
 }
+
+main .boxes {
+  width: 80%;
+  margin: auto;
+}
+main .boxes .box {
+  display: flex;
+  align-items: center;
+  margin: 75px 0px;
+}
+main .boxes .box:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+main .boxes .box .immagine {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+main .boxes .box .immagine img {
+  width: 90%;
+}
+main .boxes .box .testo {
+  width: 40%;
+  color: #424242;
+}
+main .boxes .box .testo h4 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+main .boxes .box .testo p {
+  font-size: 20px;
+}
